@@ -1,0 +1,44 @@
+{
+  "name": "restful-mongoose",
+  "version": "1.0.0",
+  "description": "Expose Mongoose models as RESTful Express resources.",
+  "main": "dist/index.js",
+  "bin": {
+    "inline-source": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "babel src -d dist -s",
+    "prebuild": "mkdirp dist",
+    "test": "eslint src",
+    "prepublish": "npm run build",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/developit/restful-mongoose.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-eslint": "^5.0.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.5.0",
+    "eslint": "^2.2.0",
+    "mkdirp": "^0.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/developit/restful-mongoose"
+  },
+  "homepage": "https://github.com/developit/restful-mongoose",
+  "keywords": [
+    "mongoose",
+    "rest",
+    "resource",
+    "express"
+  ],
+  "author": "Jason Miller <jason@developit.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "resource-router-middleware": "^0.6.0"
+  }
+}
