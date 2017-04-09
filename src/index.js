@@ -33,7 +33,7 @@ export default function(name, model) {
 			model.findByIdAndUpdate(params[name], { $set:body }, toRes(res));
 		},
 
-		delete(req, res) {
+		delete({ params }, res) {
 			model.findByIdAndRemove(params[name], toRes(res));
 		}
 	});
