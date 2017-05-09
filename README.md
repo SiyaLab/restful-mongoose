@@ -1,5 +1,7 @@
 # restful-mongoose [![NPM Version](http://img.shields.io/npm/v/restful-mongoose.svg?style=flat)](https://npmjs.com/package/restful-mongoose)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/restful-mongoose.svg)](https://greenkeeper.io/)
+
 > Expose Mongoose models as RESTful Express resources.
 
 
